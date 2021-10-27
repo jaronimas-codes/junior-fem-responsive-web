@@ -1,0 +1,274 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!-- displays site properly based on user's device -->
+
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="32x32"
+      href="./images/favicon-32x32.png"
+    />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Barlow:wght@600&family=Fraunces:wght@700;900&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="reset2019.css" />
+    <link
+      rel="stylesheet"
+      href="https://use.fontawesome.com/releases/v5.5.0/css/all.css"
+      integrity="sha384-B4dIYHKNBt8Bc12p+WXckhzcICo0wtJAoU8YZTY5qE0Id1GSseTk6S+L3BlXeVIU"
+      crossorigin="anonymous"
+    />
+    <link rel="stylesheet" href="style.css" />
+
+    <title>Frontend Mentor | Sunnyside agency landing page</title>
+
+    <!-- Feel free to remove these styles or customise in your own stylesheet 👍 -->
+    <style>
+      .attribution {
+        font-size: 11px;
+        text-align: center;
+      }
+      .attribution a {
+        color: hsl(228, 45%, 44%);
+      }
+    </style>
+  </head>
+  <body>
+    <header class="header">
+      <div class="header__main-nav">
+        <div class="img-wrap">
+          <img src="./images/logo.svg" alt="company's logo" />
+        </div>
+        <div class="nav-wrap">
+          <ul class="desktop-nav hidden" id="desktop-nav">
+            <li class="desktop-nav__item">
+              <a href="#" class="desktop-nav__link">About</a>
+            </li>
+            <li class="desktop-nav__item">
+              <a href="#" class="desktop-nav__link">Services</a>
+            </li>
+            <li class="desktop-nav__item">
+              <a href="#" class="desktop-nav__link">Projects</a>
+            </li>
+            <li class="desktop-nav__item btn-white">
+              <a href="#" class="desktop-nav__link desktop-nav__link--cta"
+                >Contact</a
+              >
+            </li>
+          </ul>
+          <div class="mobile-nav">
+            <img
+              src="./images/icon-hamburger.svg"
+              alt="mobile navigation menu icon"
+              id="hamburger"
+            />
+          </div>
+        </div>
+      </div>
+      <h1 class="header__title">We are creatives</h1>
+      <img src="./images/icon-arrow-down.svg" alt="arrow down" />
+    </header>
+    <main class="main">
+      <section class="features">
+        <!-- CARD ONE -->
+        <div class="card reverse">
+          <div class="card-img-wrap">
+            <div class="card__img card__img-mobile">
+              <img
+                src="./images/mobile/image-transform.jpg"
+                alt="transformation img"
+              />
+            </div>
+            <div class="card__img card__img-desktop">
+              <img
+                src="./images/desktop/image-transform.jpg"
+                alt="transformation img"
+              />
+            </div>
+          </div>
+          <div class="card__body card__body-reverse">
+            <h2 class="card__title title-features">Transform your brand</h2>
+            <p class="card__text text-features">
+              We are a full-service creative agency specializing in helping
+              brands grow fast. Engage your clients through compelling visuals
+              that do most of the marketing for you.
+            </p>
+            <a href="#" class="card__cta learn-more">Learn more</a>
+          </div>
+        </div>
+        <!-- CARD TWO -->
+        <div class="card">
+          <div class="card-img-wrap">
+            <div class="card__img card__img-mobile">
+              <img
+                src="./images/mobile/image-stand-out.jpg"
+                alt="transformation img"
+              />
+            </div>
+            <div class="card__img card__img-desktop">
+              <img
+                src="./images/desktop/image-stand-out.jpg"
+                alt="transformation img"
+              />
+            </div>
+          </div>
+          <div class="card__body">
+            <h2 class="card__title title-features">
+              Stand out to the right audience
+            </h2>
+            <p class="card__text text-features">
+              Using a collaborative formula of designers, researchers,
+              photographers, videographers, and copywriters, we’ll build and
+              extend your brand in digital places.
+            </p>
+            <a href="#" class="card__cta learn-more learn-more-pink"
+              >Learn more</a
+            >
+          </div>
+        </div>
+      </section>
+      <!-- SECTION SERVICE -->
+      <!-- SERVICE ONE-->
+      <section class="services">
+        <div class="service service__one">
+          <div class="service__body">
+            <h2 class="service__title">Graphic design</h2>
+            <p class="service__text">
+              Great design makes you memorable. We deliver artwork that
+              underscores your brand message and captures potential clients’
+              attention.
+            </p>
+          </div>
+        </div>
+        <!-- SERVICE TWO-->
+        <div class="service service__two">
+          <div class="service__body">
+            <h2 class="service__title">Photography</h2>
+            <p class="service__text">
+              Increase your credibility by getting the most stunning,
+              high-quality photos that improve your business image.
+            </p>
+          </div>
+        </div>
+      </section>
+      <section class="testimonials">
+        <h2 class="testimonials__title">Client testimonials</h2>
+        <div class="clients">
+          <!-- CLIENT ONE -->
+          <div class="client">
+            <img
+              src="./images/image-emily.jpg"
+              alt="client photo"
+              class="client__photo"
+            />
+            <p class="client__text">
+              We put our trust in Sunnyside and they delivered, making sure our
+              needs were met and deadlines were always hit.
+            </p>
+            <div class="client__info">
+              <span class="client__name"> Emily R. </span>
+              <span class="client__profession">Marketing Director</span>
+            </div>
+          </div>
+          <!-- CLIENT TWO -->
+          <div class="client">
+            <img
+              src="./images/image-thomas.jpg"
+              alt="client photo"
+              class="client__photo"
+            />
+            <p class="client__text">
+              Sunnyside’s enthusiasm coupled with their keen interest in our
+              brand’s success made it a satisfying and enjoyable experience.
+            </p>
+            <div class="client__info">
+              <span class="client__name"> Thomas S. </span>
+              <span class="client__profession">Chief Operating Officer </span>
+            </div>
+          </div>
+          <!-- CLIENT THREE -->
+          <div class="client">
+            <img
+              src="./images/image-jennie.jpg"
+              alt="client photo"
+              class="client__photo"
+            />
+            <p class="client__text">
+              Incredible end result! Our sales increased over 400% when we
+              worked with Sunnyside. Highly recommended!
+            </p>
+            <div class="client__info">
+              <span class="client__name"> Jennie F. </span>
+              <span class="client__profession">Business Owner</span>
+            </div>
+          </div>
+        </div>
+      </section>
+      <section class="gallery">
+        <div class="gallery__photo-wrap">
+          <img
+            src="./images/mobile/image-gallery-milkbottles.jpg"
+            alt="milk bottles"
+            class="gallery__photo"
+          />
+        </div>
+        <div class="gallery__photo-wrap">
+          <img
+            src="./images/mobile/image-gallery-orange.jpg"
+            alt="milk bottles"
+            class="gallery__photo"
+          />
+        </div>
+        <div class="gallery__photo-wrap">
+          <img
+            src="./images/mobile/image-gallery-cone.jpg"
+            alt="milk bottles"
+            class="gallery__photo"
+          />
+        </div>
+        <div class="gallery__photo-wrap">
+          <img
+            src="./images/mobile/image-gallery-sugar-cubes.jpg"
+            alt="milk bottles"
+            class="gallery__photo"
+          />
+        </div>
+      </section>
+    </main>
+    <footer class="footer">
+      <img src="./images/logo.svg" alt="logo" class="footer__logo" />
+      <ul class="footer__nav">
+        <li class="footer__nav-list"><a href="#">About</a></li>
+        <li class="footer__nav-list"><a href="#">Services</a></li>
+        <li class="footer__nav-list"><a href="#">Projects</a></li>
+      </ul>
+      <ul class="footer__socials">
+        <li class="social">
+          <a href="#"><i class="fab fa-facebook-square"></i></a>
+        </li>
+        <li class="social">
+          <a href="#"><i class="fab fa-instagram"></i></a>
+        </li>
+        <li class="social">
+          <a href="#"><i class="fab fa-twitter"></i></a>
+        </li>
+        <li class="social">
+          <a href="#"><i class="fab fa-pinterest"></i></a>
+        </li>
+      </ul>
+    </footer>
+
+    <div class="attribution" style="display: none">
+      Challenge by
+      <a href="https://www.frontendmentor.io?ref=challenge" target="_blank"
+        >Frontend Mentor</a
+      >. Coded by
+      <a href="https://github.com/jaronimas-codes">jaronimas-codes</a>.
+    </div>
+    <script src="script.js"></script>
+  </body>
+</html>
